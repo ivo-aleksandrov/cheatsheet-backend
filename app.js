@@ -39,6 +39,8 @@ app.post("/api/addCommand", command);
 app.post("/api/editCommand", command);
 app.delete("/api/deleteCommand/:ID", command);
 
+//test
+
 const start = async () => {
   try {
     checkDbConnection();
