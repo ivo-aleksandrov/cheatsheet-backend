@@ -43,7 +43,7 @@ const start = async () => {
   try {
     checkDbConnection();
 
-    app.listen(port, console.log(`The backend app is working on port ${port}!`));
+    app.listen(port, console.log(`The backendd app is working on port ${port}!`));
   } catch (error) {}
 };
 
