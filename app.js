@@ -39,13 +39,11 @@ app.post("/api/addCommand", command);
 app.post("/api/editCommand", command);
 app.delete("/api/deleteCommand/:ID", command);
 
-//test
-
 const start = async () => {
   try {
     checkDbConnection();
 
-    app.listen(port, console.log(`Backend is working on port ${port}!`));
+    app.listen(port, console.log(`The backend app is working on port ${port}!`));
   } catch (error) {}
 };
 
