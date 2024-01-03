@@ -1,0 +1,54 @@
+<!DOCTYPE text/css>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>MMS Login Page</title>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="theme-changer">
+        <span><h4>Theme:</h4></span>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+      </div>
+      <div class="form-container sign-up">
+        <form>
+          <h1>Forget Your Password</h1>
+          <input type="text" placeholder="Username" />
+          <button>Send recovery email</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form action="/login" method="POST">
+          <h1>Sign In</h1>
+          <input type="text" placeholder="Username" name="username" />
+          <input type="password" placeholder="Password" name="password" />
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Remembered your password?</h1>
+            <p>Enter your username and password</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Forget Your Password?</h1>
+            <p>We will send you recovery email</p>
+            <button class="hidden" id="register">Recover</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
