@@ -10,7 +10,7 @@ pipeline {
             }
         }
 
-        stage('Build and Push Docker Image') {
+        stage('Build Docker Image') {
             steps {
                 script {
                         sh 'docker-compose -f /opt/cheatsheet/docker-compose.yml build --no-cache backend'
