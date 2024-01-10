@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label 'cheatsheet-agent' 
+        }
+    }
 
     stages {
         stage('Checkout') {
